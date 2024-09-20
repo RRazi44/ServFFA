@@ -1,0 +1,10 @@
+name: RAZIPL
+version: 1.0
+author: Razi
+main: fr.razi.lobby.Main
+commands:
+  lobby:
+    description: Cette commande permet de retourner au lobby
+  changeworld:
+    description: Cette commande permet de changer de monde pour les admins
+    perm: cw.use
