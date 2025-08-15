@@ -1,0 +1,20 @@
+name: FFAGames
+main: fr.razi.ffagame.FFAGame
+version: 1.0
+author: Razi
+commands:
+  lobby:
+    description: Teleports you to the lobby.
+    permission: ffagame.command.lobby
+    usage: "/lobby"
+  world:
+    description: Shows your current world and lets you teleport to a defined location.
+    permission: ffagame.command.world
+    usage: "/world"
+permissions:
+  ffagame.command.lobby:
+    description: Allows the player to use /lobby
+    default: true
+  ffagame.command.world:
+    description: Allows the player to use /world
+    default: op

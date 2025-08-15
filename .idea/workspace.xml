@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de7383ee-0c7c-46ba-9896-16b7685d3389" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/FFAService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/enums/Perms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/tabs/WorldTabCompleter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/BaseFFAListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDamageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDeathListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinFFAListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerVelocityListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/BreakBlockTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/FFAVoidCheckTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/KnockBackManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/SpawnManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/commands/commandChangeWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/commands/commandLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/listeners/MainListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/commands/commandChangeWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/commands/commandLobby.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/listeners/MainListener.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="30xbCg9R4jAy00PaSZweDE5mrST" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.FFAGame [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.razi.ffagame.task" />
+      <recent name="fr.razi.ffagame.commands.tabs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\33635\Desktop\ServFFA\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FFAGame [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de7383ee-0c7c-46ba-9896-16b7685d3389" name="Changes" comment="" />
+      <created>1754572049941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754572049941</updated>
+    </task>
+    <servers />
+  </component>
+</project>

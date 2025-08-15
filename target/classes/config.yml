@@ -1,0 +1,4 @@
+tnt-knockback:
+  horizontal-multiplier: 4.0
+  vertical-velocity: 3.0
+block-break-delay: 100
