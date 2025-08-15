@@ -8,9 +8,9 @@ public class ConfigManager {
     private final FFAGame plugin;
     private FileConfiguration config;
 
-    private static double tntHorizontal;
-    private static double tntVertical;
-    private static int blockBreakDelay;
+    private double tntHorizontal;
+    private double tntVertical;
+    private int blockBreakDelay;
 
     public ConfigManager(FFAGame plugin) {
         this.plugin = plugin;
@@ -38,10 +38,6 @@ public class ConfigManager {
 
     public int getBlockBreakDelay(){
         return blockBreakDelay;
-    }
-
-    public void reload(){
-        load();
     }
 
 }

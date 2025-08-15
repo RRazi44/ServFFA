@@ -1,19 +1,20 @@
 package fr.razi.ffagame.listeners;
 
-import fr.razi.ffagame.FFAService;
-import fr.razi.ffagame.utils.ItemManager;
-import fr.razi.ffagame.utils.PlayerManager;
+import fr.razi.ffagame.FFAGame;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-public class PlayerJoinFFAListener extends BaseFFAListener {
+public class PlayerJoinFFAListener implements Listener {
 
-    public PlayerJoinFFAListener(FFAService ffa) {
-        super(ffa);
+    private final FFAGame plugin;
+
+    public PlayerJoinFFAListener(FFAGame main) {
+        plugin = main;
     }
 
     @EventHandler
@@ -24,23 +25,23 @@ public class PlayerJoinFFAListener extends BaseFFAListener {
                 || !(event.getWhoClicked() instanceof Player)) return;
 
         Player player = (Player) event.getWhoClicked();
-        if(isInFFA(player.getWorld())) return;
+        if(plugin.getWorldManager().isInFFA(player.getWorld())) return;
 
-        if(ItemManager.isLobbyAxe(event.getCurrentItem())){
+        if(plugin.getItemManager().isLobbyAxe(event.getCurrentItem())){
             event.setCancelled(true);
-            PlayerManager.sendToFFA(player);
+            plugin.getPlayerManager().sendToFFA(player, plugin);
         }
 
     }
 
     @EventHandler
     public void onInteract(PlayerInteractEvent event){
-        if(isInFFA(event.getPlayer().getWorld())) return;
+        if(plugin.getWorldManager().isInFFA(event.getPlayer().getWorld())) return;
         if(event.getItem() == null || event.getPlayer() == null) return;
         if(event.getAction() != Action.RIGHT_CLICK_AIR && event.getAction() != Action.RIGHT_CLICK_BLOCK) return;
-        if(ItemManager.isLobbyAxe(event.getItem())){
+        if(plugin.getItemManager().isLobbyAxe(event.getItem())){
             event.setCancelled(true);
-            PlayerManager.sendToFFA(event.getPlayer());
+            plugin.getPlayerManager().sendToFFA(event.getPlayer(), plugin);
         }
     }
 

@@ -37,20 +37,20 @@ public class commandWorld implements CommandExecutor {
                 break;
             case 1:
                 String targetName = args[0];
-                World target = Bukkit.getWorld(targetName);
+                World targetWorld = Bukkit.getWorld(targetName);
 
-                if (target == null) {
+                if (targetWorld == null) {
                     String available = Bukkit.getWorlds().stream().map(World::getName).collect(Collectors.joining(", "));
                     player.sendMessage(FFAGame.PREFIX + ChatColor.RED + "World not found: " + targetName);
                     player.sendMessage(ChatColor.GRAY + "Available: " + (available.isEmpty() ? "none" : available));
                     return true;
                 }
 
-                // TP au spawn du monde (plus safe qu'une coord fixe)
-                Location dest = target.getSpawnLocation();
-                player.teleport(dest);
-                player.sendMessage(FFAGame.PREFIX + ChatColor.GREEN + "Teleported to world " + ChatColor.YELLOW + target.getName() +
-                        ChatColor.GRAY + " (" + dest.getBlockX() + ", " + dest.getBlockY() + ", " + dest.getBlockZ() + ")");
+                Location targetWorldSpawnLocation = targetWorld.getSpawnLocation();
+                player.teleport(targetWorldSpawnLocation);
+                player.sendMessage(FFAGame.PREFIX + ChatColor.GREEN + "Teleported to world " + ChatColor.YELLOW +
+                        targetWorld.getName() + ChatColor.GRAY + " (" + targetWorldSpawnLocation.getBlockX() + ", "
+                        + targetWorldSpawnLocation.getBlockY() + ", " + targetWorldSpawnLocation.getBlockZ() + ")");
                 return true;
             default:
                 player.sendMessage(FFAGame.PREFIX + ChatColor.YELLOW + "Usage: /" + label + " <world>");

@@ -5,14 +5,13 @@ import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 
 public class PlayerManager {
 
-    public static void sendToLobby(Player player){
+    public void sendToLobby(Player player, FFAGame plugin){
         resetPlayerState(player);
-        player.getInventory().setItem(4, ItemManager.getLobbyAxe());
+        player.getInventory().setItem(4, plugin.getItemManager().getLobbyAxe());
         player.teleport(WorldManager.locLobby);
         player.updateInventory();
         for(PotionEffect potionEffect : player.getActivePotionEffects()){
@@ -20,11 +19,13 @@ public class PlayerManager {
         }
     }
 
-    public static void sendToFFA(Player player) {
+
+    public void sendToFFA(Player player, FFAGame plugin) {
         resetPlayerState(player);
         stuffToFFARush(player);
-        player.teleport(FFAGame.spawnManager.getRandomSpawn());
+        player.teleport(plugin.getSpawnManager().getRandomSpawn());
     }
+
 
     private static void resetPlayerState(Player player) {
         clearInventory(player);
@@ -41,6 +42,7 @@ public class PlayerManager {
         player.setAllowFlight(false);
     }
 
+
     public static void stuffToFFARush(Player player){
 
         clearInventory(player);
@@ -55,7 +57,6 @@ public class PlayerManager {
         ItemStack tnt = new ItemStack(Material.TNT);
         tnt.setAmount(16);
 
-
         for(int i = 4; i<8; i++) player.getInventory().setItem(i, sandstone);
         player.getInventory().setItem(0, ItemManager.setUnbreakable(new ItemStack(Material.STONE_SWORD)));
         player.getInventory().setItem(1, tnt);
@@ -67,11 +68,9 @@ public class PlayerManager {
     }
 
 
-
     public static void clearInventory(Player player){
         player.getInventory().clear();
         player.getInventory().setArmorContents(new ItemStack[4]);
     }
-
 
 }

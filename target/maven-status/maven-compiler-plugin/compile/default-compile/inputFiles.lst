@@ -5,7 +5,6 @@ C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\commands\enums\Perm
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\PlayerJoinFFAListener.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\utils\SpawnManager.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\PlayerJoinListener.java
-C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\BaseFFAListener.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\commands\tabs\WorldTabCompleter.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\utils\PlayerManager.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\task\BreakBlockTask.java
@@ -13,9 +12,7 @@ C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\task\FFAVoidCheckTa
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\PlayerDamageListener.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\utils\ItemManager.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\commands\commandWorld.java
-C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\FFAService.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\utils\ConfigManager.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\utils\KnockBackManager.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\FFAGame.java
 C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\PlayerVelocityListener.java
-C:\Users\33635\Desktop\ServFFA\src\main\java\fr\razi\ffagame\listeners\PlayerDeathListener.java

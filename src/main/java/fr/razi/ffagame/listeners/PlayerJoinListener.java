@@ -1,22 +1,22 @@
 package fr.razi.ffagame.listeners;
 
 import fr.razi.ffagame.FFAGame;
-import fr.razi.ffagame.FFAService;
-import fr.razi.ffagame.utils.PlayerManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class PlayerJoinListener extends BaseFFAListener {
+public class PlayerJoinListener implements Listener {
 
-    public PlayerJoinListener(FFAService ffa) {
-        super(ffa);
+    private final FFAGame plugin;
+    public PlayerJoinListener(FFAGame plugin) {
+        this.plugin = plugin;
     }
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         final Player player = event.getPlayer();
-        PlayerManager.sendToLobby(player);
+        plugin.getPlayerManager().sendToLobby(player, plugin);
         event.setJoinMessage(FFAGame.PREFIX + "Bienvenue sur le serveur !");
     }
 

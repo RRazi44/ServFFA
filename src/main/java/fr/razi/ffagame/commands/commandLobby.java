@@ -2,7 +2,6 @@ package fr.razi.ffagame.commands;
 
 import fr.razi.ffagame.FFAGame;
 import fr.razi.ffagame.commands.enums.Perms;
-import fr.razi.ffagame.utils.PlayerManager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,6 +10,11 @@ import org.bukkit.entity.Player;
 
 public class commandLobby implements CommandExecutor {
 
+	private final FFAGame plugin;
+
+	public commandLobby(FFAGame plugin){
+		this.plugin = plugin;
+	}
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -32,7 +36,7 @@ public class commandLobby implements CommandExecutor {
 			return true;
 		}
 
-		PlayerManager.sendToLobby(player);
+		plugin.getPlayerManager().sendToLobby(player, plugin);
 		player.sendMessage(FFAGame.PREFIX + ChatColor.GREEN + "Teleported to the lobby.");
 
 		return true;

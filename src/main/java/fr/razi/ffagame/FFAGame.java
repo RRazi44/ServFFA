@@ -19,37 +19,39 @@ public class FFAGame extends JavaPlugin {
 
 	public static final String PREFIX = "§8[§6FFAGames§8]§f ";
 
-	private FFAService ffaService;
     private ItemManager itemManager;
 	private KnockBackManager knockBackManager;
 
-    public SpawnManager spawnManager;
-	public BreakBlockTask breakTask;
-	public FFAVoidCheckTask voidTask;
+	private PlayerManager playerManager;
+    private SpawnManager spawnManager;
+	private BreakBlockTask breakTask;
+	private FFAVoidCheckTask voidTask;
+	private WorldManager worldManager;
 
-	@Override
+    @Override
 	public void onEnable() {
 
+		ConfigManager configManager = new ConfigManager(this);
 		itemManager = new ItemManager();
-        ConfigManager configManager = new ConfigManager(this);
-		ffaService = new FFAService();
 		knockBackManager = new KnockBackManager(configManager);
         spawnManager = new SpawnManager();
+		playerManager = new PlayerManager();
+		worldManager = new WorldManager();
 
-		getCommand("lobby").setExecutor(new commandLobby());
+		getCommand("lobby").setExecutor(new commandLobby(this));
 
 		getCommand("world").setExecutor(new commandWorld());
 		getCommand("world").setTabCompleter(new WorldTabCompleter());
 
 		getServer().getScheduler().runTask(this, () -> {
-			WorldManager.initWorlds();
+			worldManager.initWorlds();
 			itemManager.loadItems();
-            spawnManager.loadSpawns();
+            spawnManager.loadSpawns(this);
 		});
 
 		registerEvents(getServer().getPluginManager());
 
-		voidTask = new FFAVoidCheckTask();
+		voidTask = new FFAVoidCheckTask(this);
 		voidTask.runTaskTimer(this, 0L, 5L);
 
 		breakTask = new BreakBlockTask(configManager.getBlockBreakDelay());
@@ -69,19 +71,43 @@ public class FFAGame extends JavaPlugin {
 
 
 	private void registerEvents(PluginManager pm) {
-		pm.registerEvents(new BlockListener(ffaService, this), this);
-		pm.registerEvents(new PlayerDamageListener(ffaService), this);
-		pm.registerEvents(new PlayerJoinListener(ffaService), this);
-        pm.registerEvents(new PlayerJoinFFAListener(ffaService), this);
-        pm.registerEvents(new PlayerVelocityListener(ffaService, knockBackManager), this);
+		pm.registerEvents(new BlockListener(this), this);
+		pm.registerEvents(new PlayerDamageListener(this), this);
+		pm.registerEvents(new PlayerJoinListener(this), this);
+        pm.registerEvents(new PlayerJoinFFAListener(this), this);
+        pm.registerEvents(new PlayerVelocityListener(this), this);
 	}
 
 	public BreakBlockTask getBreakTask() {
 		return breakTask;
 	}
 
+	public SpawnManager getSpawnManager() {
+		return spawnManager;
+	}
+
+	public PlayerManager getPlayerManager() {
+		return playerManager;
+	}
+
+	public WorldManager getWorldManager() {
+		return worldManager;
+	}
+
+	public ItemManager getItemManager() {
+		return itemManager;
+	}
+
+	public KnockBackManager getKnockBackManager() {
+		return knockBackManager;
+	}
+
+
+
+
 	public void consoleInfo(String msg)  { Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN  + PREFIX + msg); }
 	public void consoleWarn(String msg)  { Bukkit.getConsoleSender().sendMessage(ChatColor.YELLOW + PREFIX + msg); }
 	public void consoleError(String msg) { Bukkit.getConsoleSender().sendMessage(ChatColor.RED    + PREFIX + msg); }
+
 
 }

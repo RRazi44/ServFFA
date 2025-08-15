@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ItemManager {
 
-    private static ItemStack lobbyAxe;
+    private ItemStack lobbyAxe;
     public static final String DISPLAY_NAME = "§6✦ §lHache du Guerrier Éternel §6✦";
     public static final List<String> LORE = Arrays.asList(
         "§5☠ §oForgée dans les flammes du Néant,",
@@ -28,15 +28,15 @@ public class ItemManager {
         lobbyAxe = createAxe();
     }
 
-    public static ItemStack getLobbyAxe(){
+    public ItemStack getLobbyAxe(){
         return lobbyAxe.clone();
     }
 
-    public static boolean isLobbyAxe(ItemStack itemStack){
+    public boolean isLobbyAxe(ItemStack itemStack){
         return itemStack != null && lobbyAxe != null && itemStack.isSimilar(lobbyAxe);
     }
 
-    public static ItemStack createItem(Material material, List<String> lore, String name) {
+    public ItemStack createItem(Material material, List<String> lore, String name) {
         ItemStack itemStack = new ItemStack(material);
         ItemMeta itemMeta = itemStack.getItemMeta();
 
@@ -49,7 +49,7 @@ public class ItemManager {
         return itemStack;
     }
 
-    public static ItemStack createAxe(){
+    public ItemStack createAxe(){
         return createItem(Material.DIAMOND_AXE, LORE, DISPLAY_NAME);
     }
 

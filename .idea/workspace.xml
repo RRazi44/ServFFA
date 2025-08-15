@@ -5,32 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de7383ee-0c7c-46ba-9896-16b7685d3389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/FFAService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/enums/Perms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/tabs/WorldTabCompleter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/BaseFFAListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDamageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDeathListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinFFAListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerVelocityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/BreakBlockTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/FFAVoidCheckTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/KnockBackManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/SpawnManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/commands/commandChangeWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/commands/commandLobby.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lobby/fr/razi/lobby/listeners/MainListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/commands/commandChangeWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/commands/commandLobby.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/razi/lobby/listeners/MainListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lobby.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/FFAGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/FFAGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/FFAService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/commandWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/tabs/WorldTabCompleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/commands/tabs/WorldTabCompleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/BaseFFAListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/BlockListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/BlockListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDamageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDamageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerDeathListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinFFAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinFFAListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerJoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerVelocityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/listeners/PlayerVelocityListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/BreakBlockTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/BreakBlockTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/FFAVoidCheckTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/task/FFAVoidCheckTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/ItemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/PlayerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/SpawnManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/SpawnManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/WorldManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/razi/ffagame/utils/WorldManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FFAGame-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/FFAGame-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/FFAGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/FFAGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/FFAService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/commandLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/commandLobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/commandWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/commandWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/tabs/WorldTabCompleter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/commands/tabs/WorldTabCompleter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/BaseFFAListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/BlockListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/BlockListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerDamageListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerDamageListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerDamageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerDamageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerDeathListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerJoinFFAListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerJoinFFAListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerJoinListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerJoinListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerVelocityListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/listeners/PlayerVelocityListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/task/BreakBlockTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/task/BreakBlockTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/task/FFAVoidCheckTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/task/FFAVoidCheckTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/ConfigManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/ItemManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/ItemManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/PlayerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/PlayerManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/SpawnManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/SpawnManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/WorldManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/razi/ffagame/utils/WorldManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,8 +1,6 @@
 package fr.razi.ffagame.listeners;
 
 import fr.razi.ffagame.FFAGame;
-import fr.razi.ffagame.FFAService;
-import fr.razi.ffagame.utils.WorldManager;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 
@@ -11,6 +9,7 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.TNTPrimed;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockExplodeEvent;
@@ -21,17 +20,17 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import java.util.Iterator;
 import java.util.List;
 
-public class BlockListener extends BaseFFAListener {
+public class BlockListener implements Listener {
+
     private final FFAGame plugin;
 
-    public BlockListener(FFAService ffa, FFAGame plugin) {
-        super(ffa);
+    public BlockListener(FFAGame plugin) {
         this.plugin = plugin;
     }
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onBreakBlock(BlockBreakEvent event) {
-        if(event.getPlayer().getWorld() == WorldManager.worldLobby){
+        if(event.getPlayer().getWorld() == plugin.getWorldManager().getLobby()){
             event.setCancelled(true);
             return;
         }
@@ -48,7 +47,7 @@ public class BlockListener extends BaseFFAListener {
 
     @EventHandler(ignoreCancelled = true)
     public void onPlaceBlock(BlockPlaceEvent event){
-        if(event.getBlock().getWorld() == WorldManager.worldLobby) return;
+        if(event.getBlock().getWorld() == plugin.getWorldManager().getLobby()) return;
         if(event.getBlock().getType() != Material.SANDSTONE) return;
         plugin.getBreakTask().registerBlock(event.getBlock().getLocation());
     }

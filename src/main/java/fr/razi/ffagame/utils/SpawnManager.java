@@ -1,5 +1,6 @@
 package fr.razi.ffagame.utils;
 
+import fr.razi.ffagame.FFAGame;
 import org.bukkit.Location;
 import org.bukkit.World;
 import java.util.ArrayList;
@@ -19,8 +20,8 @@ public class SpawnManager {
         return spawns.get(random.nextInt(spawns.size()));
     }
 
-    public void loadSpawns() {
-        World world = WorldManager.worldFFA;
+    public void loadSpawns(FFAGame plugin) {
+        World world = plugin.getWorldManager().getWorldFFA();
 
         int y = 101;
         double radius = 48.5;
